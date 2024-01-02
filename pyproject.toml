@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "parser-for-two-site"
+version = "0.1.0"
+description = ""
+authors = ["Rauan Mangitov <rmangitov@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+requests-cache = "^1.1.1"
+sqlalchemy = "^2.0.24"
+python-dotenv = "^1.0.0"
+pydantic = "^2.5.3"
+pydantic-settings = "^2.1.0"
+lxml = "^5.0.0"
+alembic = "^1.13.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
