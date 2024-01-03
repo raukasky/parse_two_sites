@@ -28,6 +28,10 @@ class Settings(BaseSettings):
     POSTGRES_ECHO: bool
     SQLALCHEMY_DATABASE_URI: PostgresDsn | None = None
 
+    # Celery settings
+    CELERY_BROKER_URL: str
+    CELERY_BACKEND_URL: str
+
     @field_validator('SQLALCHEMY_DATABASE_URI', mode='after')
     def assemble_db_connection(cls, v: str, values: FieldValidationInfo) -> str:
         if v is not None:

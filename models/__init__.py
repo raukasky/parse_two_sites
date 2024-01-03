@@ -1,1 +1,1 @@
-from .sitemap import *
+from .document import *
